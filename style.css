@@ -1,0 +1,85 @@
+body{
+    background-color: beige;
+}
+#calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 700px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 20px;
+    border: 5px solid black;
+    background-color: #1a1a50;
+    box-shadow: 10px 10px 10px black;
+    animation: slide 2s  linear 2 ;
+}
+#buttons{
+    border: 5px groove lightgray;
+    padding-inline: 10px;
+    background-color: white;
+}
+h1{
+    text-align: center;
+    font-family: "Algerian One", cursive;
+    font-size: xx-large;
+    transition: transform 0.5s ease-in-out;
+    animation: slidedown 3s 1 linear;
+
+}
+h1:hover{
+    text-decoration: underline;
+    transform: scale(1.20);
+
+}
+@keyframes slidedown{
+    from{
+
+        transform: scale(1.2);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
+@keyframes slide{
+    from{
+        transform:translateY(-50px);
+    }
+    to{
+        transform:translateY(0px);
+    }
+}
+
+button{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px;
+    font-family:"Comic Sans MS", cursive;
+    background-color: black;
+    transition: transform 2000ms ease-in-out;
+
+    color: white;
+
+}
+button:hover{
+    transform: scale(1.05);
+
+}
+#display{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 10vh;
+    border: 3px solid black;
+    margin-bottom: 20px;
+}
+
+.Clear{
+    width: 250px;
+    background-color: darkblue;
+
+}
